@@ -1,0 +1,354 @@
+$color-brand: #0053ff;
+$color-black: #141c3a;
+$color-white: #fff;
+$toggle-i-height: 2px;
+$tp: 7px;
+$tn: -7px;
+
+
+.nav {
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  line-height: 65px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  z-index: 2;
+}
+
+.nav__contents {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.highlight {
+  padding: 0;
+  background-color: #111;
+}
+
+.nav__logo {
+  float: left;
+  width: auto;
+  height: auto;
+  margin-left: 3em;
+}
+
+.nav__logo a {
+  text-decoration: none;
+  color: $color-brand;
+  font-size: 2rem;
+}
+
+.nav__logo a:hover {
+  color: #00e676;
+}
+
+.nav__wrapper {
+  height: 65px;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__wrapper__list {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__button {
+  margin: auto 4em auto 0;
+  background: transparent;
+  color: $color-brand;
+  padding: 0 1.2rem;
+  border-color: $color-brand;
+  border-width: 2px;
+  border-radius: 290486px;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav__button a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 40px;
+  font-size: 1.1rem;
+}
+
+.nav__button:hover {
+  background: $color-brand;
+  color: $color-white;
+  border-color: transparent;
+  opacity: 90%;
+  transition: all 0.35s;
+}
+
+.nav__wrapper__list__item {
+  width: auto;
+  height: 65px;
+  padding: 0;
+  padding-right: 2rem;
+}
+
+.nav__wrapper__list__item a {
+  text-decoration: none;
+  color: $color-black;
+  line-height: 65px;
+  font-size: 1.1rem;
+}
+
+.nav__wrapper__list__item a:hover {
+  color: $color-brand;
+}
+
+.nav__toggle-btn {
+  display: none;
+}
+
+/* Media qurey section related to Navbar Section */
+
+@media screen and (max-width: 768px) {
+//   .nav {
+//     position: fixed;
+//   }
+  .nav__logo {
+    margin-left: 1em;
+  }
+  .nav__toggle-btn {
+    display: block;
+  }
+  .nav__wrapper {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .nav__wrapper--visible {
+    height: auto;
+    display: none;
+    margin-top: -4px;
+  }
+  .nav__wrapper__list {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $color-white;
+    /* same background-color as navbar */
+    background-position: center top;
+  }
+  .nav__wrapper__list__item {
+    width: 100%;
+    text-align: right;
+  }
+  .nav__wrapper__list__item a {
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav__logo a {
+    font-size: 1.6rem;
+  }
+}
+
+/* Animation */
+
+.nav__toggle-btn {
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  margin: auto;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+}
+
+.nav__toggle-btn i {
+  background-color: $color-black;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: $toggle-i-height;
+}
+
+.nav__toggle-btn i:nth-child(1) {
+  -webkit-animation: outT 0.8s backwards;
+  animation: outT 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.nav__toggle-btn i:nth-child(2) {
+  margin: 5px 0;
+  -webkit-animation: outM 0.8s backwards;
+  animation: outM 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.nav__toggle-btn i:nth-child(3) {
+  -webkit-animation: outBtm 0.8s backwards;
+  animation: outBtm 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.nav__toggle-btn.active i:nth-child(1) {
+  -webkit-animation: inT 0.8s forwards;
+  animation: inT 0.8s forwards;
+}
+
+.nav__toggle-btn.active i:nth-child(2) {
+  -webkit-animation: inM 0.8s forwards;
+  animation: inM 0.8s forwards;
+}
+
+.nav__toggle-btn.active i:nth-child(3) {
+  -webkit-animation: inBtm 0.8s forwards;
+  animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes inM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes outM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes outM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes inT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY($tp) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY($tp) rotate(135deg);
+  }
+}
+
+@keyframes inT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY($tp) rotate(0deg);
+  }
+  100% {
+    transform: translateY($tp) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes outT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY($tp) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY($tp) rotate(135deg);
+  }
+}
+
+@keyframes outT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY($tp) rotate(0deg);
+  }
+  100% {
+    transform: translateY($tp) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes inBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY($tn) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY($tn) rotate(135deg);
+  }
+}
+
+@keyframes inBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY($tn) rotate(0deg);
+  }
+  100% {
+    transform: translateY($tn) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes outBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY($tn) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY($tn) rotate(135deg);
+  }
+}
+
+@keyframes outBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY($tn) rotate(0deg);
+  }
+  100% {
+    transform: translateY($tn) rotate(135deg);
+  }
+}
