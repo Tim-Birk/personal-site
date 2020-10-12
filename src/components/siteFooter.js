@@ -41,6 +41,7 @@ const LogoContainer = styled.div`
   ${({ theme }) => ` 
     display: flex;
     width: 72px;
+    height: 60px;
     @media ${theme.device.tablet} {     
     
     }
