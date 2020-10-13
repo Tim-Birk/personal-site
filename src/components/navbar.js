@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import $ from "jquery"
+import { Link } from "gatsby"
 
 import "./navbar.scss"
 import logo from "../images/tb_logo3.png"
@@ -32,20 +33,34 @@ const Navbar = () => {
     <div style={{ height: `${active ? "100vh" : "65px"}` }}>
       <nav className="nav">
         <div className="nav__contents">
-          <div className="nav__logo">
-            <StyledLogo src={logo} />
-          </div>
+          <Link to="/">
+            <div className="nav__logo">
+              <StyledLogo src={logo} />
+            </div>
+          </Link>
           <div id="mainListDiv" className={`main_list nav__wrapper`}>
             <ul className="navlinks nav__wrapper__list">
               <li className="nav__wrapper__list__item">
-                <a href={resume} target="blank">Resume</a>
+                <a href={resume} target="blank">
+                  Resume
+                </a>
               </li>
-              <li className="nav__wrapper__list__item" style={{display: `${active ? "block" : "none"}`}}>
-                <a href="/">Contact</a>
+              <li
+                className="nav__wrapper__list__item"
+                style={{ display: `${active ? "block" : "none"}` }}
+              >
+                <Link to="/contact" className="gatsby__link">
+                  <a href="#">Contact</a>
+                </Link>
               </li>
-              <button className="nav__button" style={{display: `${active ? "none" : "block"}`}}>
-                <a href="/">Say Hello</a>
-              </button>
+              <Link to="/contact" className="gatsby__link__button">
+                <button
+                  className="nav__button"
+                  style={{ display: `${active ? "none" : "block"}` }}
+                >
+                  <a href="#">Say Hello</a>
+                </button>
+              </Link>
             </ul>
           </div>
           <span

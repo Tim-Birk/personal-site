@@ -62,7 +62,13 @@ $tn: -7px;
   padding: 0;
 }
 
-.nav__button {
+ .gatsby__link__button {
+  text-decoration: none;
+  margin: auto 0;
+ }
+
+ .nav__button {
+  text-decoration: none;
   margin: auto 4em auto 0;
   background: transparent;
   color: $color-brand;
@@ -110,6 +116,11 @@ $tn: -7px;
 .nav__toggle-btn {
   display: none;
 }
+
+.gatsby__link {
+  text-decoration: none;
+  padding: 0px !important;
+ }
 
 /* Media qurey section related to Navbar Section */
 

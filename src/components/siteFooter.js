@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 import logo from "../images/tb_logo3_white.png"
 import linkedin from "../images/linkedin.svg"
@@ -149,10 +150,11 @@ const SiteFooter = () => {
   return (
     <Footer>
       <SectionContainer>
-        <LogoContainer>
-          <StyledLogo src={logo} />
-        </LogoContainer>
-
+        <Link to="/">
+          <LogoContainer>
+            <StyledLogo src={logo} />
+          </LogoContainer>
+        </Link>
         <FooterSlogan>Let's build something together.</FooterSlogan>
         <SocialLinksContainer>
           <SocialLink

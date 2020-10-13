@@ -1,8 +1,21 @@
+const { createProxyMiddleware } = require("http-proxy-middleware")
+
 module.exports = {
   siteMetadata: {
     title: `Tim Birkmire | Web Developer`,
     description: `Tim Birkmire - Javascript Developer`,
     author: `tim birkmire`,
+  },
+  developMiddleware: app => {
+    app.use(
+      "/.netlify/functions/",
+      createProxyMiddleware({
+        target: "http://localhost:9000",
+        pathRewrite: {
+          "/.netlify/functions/": "",
+        },
+      })
+    )
   },
   plugins: [
     {
@@ -12,7 +25,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-antd",
+    `gatsby-plugin-antd`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,

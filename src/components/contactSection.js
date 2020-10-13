@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const SectionContainer = styled.div`
   ${({ theme }) => ` 
@@ -130,7 +131,9 @@ const ContactSection = () => {
         </ContentItemContainer>
         <ContentItemContainer>
           <ContentButton>
-            <a href="/">Let's talk</a>
+            <Link to="/contact">
+              <a href="#">Let's talk</a>
+            </Link>
           </ContentButton>
         </ContentItemContainer>
       </ContentContainer>
