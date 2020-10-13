@@ -224,14 +224,19 @@ const ContactForm = () => {
         ${note}
       `
     const data = { name: name, email, message }
-    axios.post(endpoints.contact, JSON.stringify(data)).then(response => {
-      if (response.status !== 200) {
-        console.log(response)
-      } else {
-        console.log("Message sent")
-        navigate("/")
+    axios.post(endpoints.contact, JSON.stringify(data)).then(
+      response => {
+        if (response.status !== 200) {
+          console.log(response)
+        } else {
+          console.log("Message sent")
+          navigate("/")
+        }
+      },
+      error => {
+        console.log(error)
       }
-    })
+    )
   }
 
   //   const onFinishFailed = errorInfo => {
@@ -256,7 +261,7 @@ const ContactForm = () => {
           } else if (
             !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
           ) {
-            errors.email = "invalid email address"
+            errors.email = "*invalid email address"
           }
           if (!values.note) {
             errors.note = "*required"
@@ -296,7 +301,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.name}
-                  style={{marginRight: "0.5rem"}}
+                  style={{ marginRight: "0.5rem" }}
                 />
               </FormItem>
               <FormItem>
