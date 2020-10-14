@@ -230,7 +230,7 @@ const ContactForm = () => {
           console.log(response)
         } else {
           console.log("Message sent")
-          navigate("/")
+          navigate("/confirm-submission")
         }
       },
       error => {
@@ -239,9 +239,6 @@ const ContactForm = () => {
     )
   }
 
-  //   const onFinishFailed = errorInfo => {
-  //     console.log("Failed:", errorInfo)
-  //   }
 
   return (
     <SectionContainer>

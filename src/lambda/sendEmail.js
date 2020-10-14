@@ -23,7 +23,7 @@ export function handler(event, context, callback) {
   let data = JSON.parse(event.body)
   let { name, email, message } = data
   let mailOptions = {
-    from: `$no-reply-timbirkmire <tim@hey.com>`,
+    from: `$no-reply-timbirkmire <timbirkmire@gmail.com>`,
     to: process.env.GATSBY_MY_EMAIL_ADDRESS,
     subject: `Portfolio Site Contact Submission`,
     replyTo: email,
