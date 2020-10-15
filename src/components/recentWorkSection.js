@@ -93,7 +93,7 @@ const RecentWorkSection = () => {
           imgUrl={fraCard}
           title="Fantasy Rankings Assistant"
           description="A fantasy football rankings generator based on player versus player comparisons (just for fun)."
-          url="https://rankings-assistant-l48srou1h.vercel.app/"
+          url="https://rankings-assistant.vercel.app/"
         />
       </CardsContainer>
     </SectionContainer>
