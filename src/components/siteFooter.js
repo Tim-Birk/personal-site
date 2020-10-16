@@ -56,6 +56,10 @@ const StyledLogo = styled.img`
     width: 100%;
     padding-top: 0.58em;
     
+    &:hover {
+      transition: all 0.3s ease 0s;
+      transform: scale(1.25) translateZ(0);
+    }
     @media ${theme.device.tablet} { 
         
         
