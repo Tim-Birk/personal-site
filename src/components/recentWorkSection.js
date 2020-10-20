@@ -87,7 +87,7 @@ const RecentWorkSection = () => {
           imgUrl={hhcmsCard}
           title="Home Health Care Management System"
           description="A demo of the KISIT platform recreated using React, Next.js, GraphQL and Ant Design."
-          url="https://home-health-care-management-system.vercel.app/"  
+          url="/hhcms"  
         />
         <ProjectCard
           imgUrl={fraCard}

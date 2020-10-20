@@ -2,13 +2,14 @@ import React from "react"
 import styled from "styled-components"
 
 import jsLogo from "../images/techIcons/javascript.png"
-import vbnetLogo from "../images/techIcons/vbnet.png"
-import sqlLogo from "../images/techIcons/sql.png"
-import sftpLogo from "../images/techIcons/sftp.png"
-import hipaaLogo from "../images/techIcons/hipaa.png"
-import ediLogo from "../images/techIcons/edi.png"
-import restLogo from "../images/techIcons/rest.png"
-import phpLogo from "../images/techIcons/php.png"
+import reactLogo from "../images/techIcons/react.png"
+import nextjs from "../images/techIcons/nextjs.png"
+import graphqlLogo from "../images/techIcons/graphql.png"
+import graphcmsLogo from "../images/techIcons/graphcms.png"
+import auth0Logo from "../images/techIcons/auth0.png"
+import antDesignLogo from "../images/techIcons/antdesign.png"
+import formikLogo from "../images/techIcons/formik.png"
+import nodejsLogo from "../images/techIcons/nodejs.png"
 
 const SectionContainer = styled.div`
   ${({ theme }) => ` 
@@ -90,40 +91,38 @@ const Logo = styled.img`
  `}
 `
 
-const KisitTechnologies = () => {
+const HhcmsTechnologies = () => {
   return (
     <SectionContainer>
-      <SectionTitle>
-        Technologies
-      </SectionTitle>
+      <SectionTitle>Technologies</SectionTitle>
       <LogosContainer>
         <LogoContainer>
-          <Logo src={jsLogo} alt="Javascript logo" />
+          <Logo src={reactLogo} alt="React logo" />
         </LogoContainer>
         <LogoContainer>
-          <Logo src={sqlLogo} alt="Microsoft SQL Server logo" />
+          <Logo src={nextjs} alt="Next.js logo" />
         </LogoContainer>
         <LogoContainer>
-          <Logo src={vbnetLogo} alt="Visual Basic .NET logo" />
+          <Logo src={graphqlLogo} alt="GraphQL logo" />
         </LogoContainer>
         <LogoContainer>
-          <Logo src={restLogo} alt="REST API logo" />
+          <Logo src={graphcmsLogo} alt="GraphCMS logo" />
         </LogoContainer>
         <LogoContainer>
-          <Logo src={ediLogo} alt="Electronic Data Interchange logo" />
+          <Logo src={auth0Logo} alt="Auth0 logo" />
         </LogoContainer>
         <LogoContainer>
-          <Logo src={hipaaLogo} alt="HIPAA logo" />
+          <Logo src={antDesignLogo} alt="Ant Design logo" />
         </LogoContainer>
         <LogoContainer>
-          <Logo src={sftpLogo} alt="Secure File Transfer Protocol logo" />
+          <Logo src={formikLogo} alt="Formik logo" />
         </LogoContainer>
         <LogoContainer>
-          <Logo src={phpLogo} alt="PHP logo" />
+          <Logo src={nodejsLogo} alt="Node.js logo" />
         </LogoContainer>
       </LogosContainer>
     </SectionContainer>
   )
 }
 
-export default KisitTechnologies
+export default HhcmsTechnologies

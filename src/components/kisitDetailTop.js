@@ -10,7 +10,7 @@ const SectionContainer = styled.div`
       
     }
     @media ${theme.device.laptop} { 
-      padding: 5rem 1.5rem 6rem;
+      padding: 3rem 1.5rem 6rem;
     }
  `}
 `
@@ -33,7 +33,7 @@ const StyledLogo = styled.img`
     width: 175px;
     margin: 0 auto;
     @media ${theme.device.tablet} { 
-      width: 235px;
+      width: 200px;
         
     }
     @media ${theme.device.laptop} { 
