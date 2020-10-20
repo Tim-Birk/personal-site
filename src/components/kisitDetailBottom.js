@@ -34,20 +34,6 @@ const SectionTitle = styled.h1`
     }
  `}
 `
-const StyledLogo = styled.img`
-  ${({ theme }) => ` 
-    width: 175px;
-    padding-top: 0.58em;
-    margin: 0 auto;
-    @media ${theme.device.tablet} { 
-      width: 235px;
-        
-    }
-    @media ${theme.device.laptop} { 
-       
-    }
- `}
-`
 
 const TitleLogoContainer = styled.div`
   ${({ theme }) => ` 
@@ -122,6 +108,7 @@ const EmailButton = styled.button`
     }
  `}
 `
+
 const ProudList = styled.ul`
   ${({ theme }) => ` 
     margin: 0 auto;
@@ -135,6 +122,7 @@ const ProudList = styled.ul`
     }
  `}
 `
+
 const ProudListItem = styled.li`
   ${({ theme }) => ` 
     font-weight: 300;
@@ -156,26 +144,27 @@ const UIImagesContainer = styled.div`
     display: grid;
     grid-row-gap: 10px;
     @media ${theme.device.tablet} {     
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        grid-template-rows: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      grid-template-rows: 1fr 1fr;
     }
     @media ${theme.device.laptop} {         
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-template-rows: 1fr;
     }
  `}
 `
+
 const ImageContainer = styled.a`
   ${({ theme }) => ` 
     margin-bottom: 1rem;
     border-radius: 15px;
 
     .gatsby-image-wrapper {
-        border-radius: 5px;
+      border-radius: 5px;
     }
     @media ${theme.device.tablet} {     
       margin-bottom: 0;
