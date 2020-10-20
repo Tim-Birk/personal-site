@@ -81,7 +81,7 @@ const RecentWorkSection = () => {
           imgUrl={kisitLogo}
           title="Keeping It Simple Information Technology"
           description="A complete practice management solution for Home Health Care Providers."
-          url="https://www.kisit.io/"  
+          url="/kisit"  
         />
         <ProjectCard
           imgUrl={hhcmsCard}

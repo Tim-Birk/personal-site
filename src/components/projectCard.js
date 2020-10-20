@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const CardContainerItem = styled.div`
   ${({ theme }) => ` 
@@ -104,17 +105,11 @@ const CardButton = styled.button`
     border-radius: 290486px;
     outline: none;
     cursor: pointer;
-
-    a {
-        text-decoration: none;
-        color: inherit;
-        line-height: 40px;
-        font-size: 1.1rem;
-    }
+    line-height: 40px;
+    font-size: 1.1rem;
   
     &:hover {
         background: ${theme["brand-color"]};
-        color: inherit;
         opacity: 90%;
         transition: all 0.35s;
     }
@@ -134,14 +129,10 @@ const ProjectCard = ({ imgUrl, title, description, url }) => {
 
       <CardBody className="block__body">
         <CardTitle>{title}</CardTitle>
-        <CardSubtitle>
-          {description}
-        </CardSubtitle>
-        <CardButton>
-          <a href={url} target="blank">
-            Learn More
-          </a>
-        </CardButton>
+        <CardSubtitle>{description}</CardSubtitle>
+        <Link to={url}>
+          <CardButton>Learn More</CardButton>
+        </Link>
       </CardBody>
     </CardContainerItem>
   )
