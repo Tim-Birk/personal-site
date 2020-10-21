@@ -51,7 +51,7 @@ const HelloSection = () => {
       <SectionSubtitle>
         I have been working in the Healthcare industry for over 10 years and
         possess a broad range of experience including web development,
-        software development, project management and consulting. About 4 years
+        software development, project management and consulting. A few years
         ago, I developed a passion for front-end web development and began
         investing my time into learning web-based technologies. Since then, I
         have been building websites, web applications and other projects-- some
