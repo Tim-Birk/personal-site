@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import myAvatar from "../images/myAvatar2.svg"
+import myAvatar from "../images/timAvatar.svg"
 
 
 const SectionContainer = styled.div`
