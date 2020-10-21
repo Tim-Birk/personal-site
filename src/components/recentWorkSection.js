@@ -78,16 +78,16 @@ const RecentWorkSection = () => {
       </SectionSubtitle>
       <CardsContainer>
         <ProjectCard
-          imgUrl={kisitLogo}
-          title="Keeping It Simple Information Technology"
-          description="A complete practice management solution for Home Health Care Providers."
-          url="/kisit"  
-        />
-        <ProjectCard
           imgUrl={hhcmsCard}
           title="Home Health Care Management System"
           description="A demo of the KISIT platform recreated using React, Next.js, GraphQL and Ant Design."
           url="/hhcms"  
+        />
+        <ProjectCard
+          imgUrl={kisitLogo}
+          title="Keeping It Simple Information Technology"
+          description="A complete practice management solution for Home Health Care Providers."
+          url="/kisit"  
         />
         <ProjectCard
           imgUrl={fraCard}
