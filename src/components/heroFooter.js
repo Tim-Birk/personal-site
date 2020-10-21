@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import heroSvg from "../images/computer2.svg"
+import heroSvg from "../images/computerCoffee.svg"
 
 const MainContainer = styled.div`
   ${({ theme }) => ` 
@@ -36,7 +36,7 @@ const SectionContainer = styled.div`
 `
 const StyledSvg = styled.img`
   ${({ theme }) => ` 
-    margin-bottom: -1.2rem;
+    margin-bottom: -0.45rem;
     max-width: 675px;
     width: 100%;
     height: auto;

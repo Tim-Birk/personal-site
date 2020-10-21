@@ -219,8 +219,8 @@ const SkillsSection = () => {
   return (
     <SectionContainer>
       <SkillColumnsContainer>
-        <SkillColumn className="middle">
-          <SkillIcon src={codeIcon} alt="Code symbol icon"/>
+        <SkillColumn>
+          <SkillIcon src={codeIcon} alt="Code symbol icon" />
           <SkillTitleContainer>
             <SkillTitle>Front-end Developer</SkillTitle>
             <SkillTitleDescription>
@@ -250,8 +250,8 @@ const SkillsSection = () => {
             </SkillSubtitle2List>
           </SkillSubtitle2Container>
         </SkillColumn>
-        <SkillColumn>
-          <SkillIcon src={databaseIcon} alt="Database symbol icon"/>
+        <SkillColumn className="middle">
+          <SkillIcon src={databaseIcon} alt="Database symbol icon" />
           <SkillTitleContainer>
             <SkillTitle>Database Admin</SkillTitle>
             <SkillTitleDescription>
@@ -281,7 +281,7 @@ const SkillsSection = () => {
           </SkillSubtitle2Container>
         </SkillColumn>
         <SkillColumn>
-          <SkillIcon src={healthcareIcon} alt="Healthcare symbol icon"/>
+          <SkillIcon src={healthcareIcon} alt="Healthcare symbol icon" />
           <SkillTitleContainer>
             <SkillTitle>Healthcare EDI</SkillTitle>
             <SkillTitleDescription>
