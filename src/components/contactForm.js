@@ -3,7 +3,7 @@ import { Formik } from "formik"
 import styled from "styled-components"
 import { navigate } from "gatsby"
 
-import myAvatar from "../images/myAvatar2.svg"
+import myAvatar from "../images/timAvatar.svg"
 const endpoints = { contact: "/.netlify/functions/sendEmail" }
 const axios = require("axios")
 
