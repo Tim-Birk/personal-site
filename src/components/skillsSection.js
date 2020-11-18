@@ -243,7 +243,7 @@ const SkillsSection = () => {
               <SkillSubtitle2ListItem>Ant Design</SkillSubtitle2ListItem>
               <SkillSubtitle2ListItem>Material UI</SkillSubtitle2ListItem>
               <SkillSubtitle2ListItem>Bootstrap</SkillSubtitle2ListItem>
-              <SkillSubtitle2ListItem>Graphql</SkillSubtitle2ListItem>
+              <SkillSubtitle2ListItem>GraphQL</SkillSubtitle2ListItem>
               <SkillSubtitle2ListItem>Github</SkillSubtitle2ListItem>
               <SkillSubtitle2ListItem>Serverless Lambda</SkillSubtitle2ListItem>
               <SkillSubtitle2ListItem>Terminal</SkillSubtitle2ListItem>
@@ -270,7 +270,7 @@ const SkillsSection = () => {
             <SkillSubtitle2List>
               <SkillSubtitle2ListItem>MongoDB Atlas</SkillSubtitle2ListItem>
               <SkillSubtitle2ListItem>Apollo</SkillSubtitle2ListItem>
-              <SkillSubtitle2ListItem>Graphql</SkillSubtitle2ListItem>
+              <SkillSubtitle2ListItem>GraphQL</SkillSubtitle2ListItem>
               <SkillSubtitle2ListItem>Azure</SkillSubtitle2ListItem>
               <SkillSubtitle2ListItem>phpMyAdmin</SkillSubtitle2ListItem>
               <SkillSubtitle2ListItem>
