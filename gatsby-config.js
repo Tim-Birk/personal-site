@@ -28,17 +28,18 @@ module.exports = {
     `gatsby-plugin-antd`,
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           // {
           //   family: `Montserrat`,
           //   variants: [`300`, `400`, `700`],
           // },
-          {
-            family: `Nunito Sans`,
-            variants: [`300`, `400`, `500`, `700`, `800`],
-          },
+          // {
+          //   family: `Nunito Sans`,
+          //   variants: [`300`, `400`, `500`, `700`, `800`],
+          // },
+          `Nunito Sans\:300,400,500,700,800`
         ],
       },
     },
