@@ -150,7 +150,7 @@ const KisitDetail = () => {
           administrative functions including payroll, staff scheduling,
           compliance, billing and more. This is where I have spent the majority
           of my professional career where I transitioned as a project manager
-          into a full time programmer. KISIT is currently being used by 2
+          into a full time software developer. KISIT is currently being used by 2
           licensed home health care providers in New York that service over 500
           patients and staff over 400 employees. To learn more about about
           KISIT, feel free to check out our website:
